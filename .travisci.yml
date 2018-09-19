@@ -1,0 +1,5 @@
+deploy:
+  provider: gcs
+  access_key_id: "GOOGSPRRTXE2ITUPWRENPL2V"
+  secret_access_key: "3em/lpTO5QMQ4zSVzCg04ytN9TOGP4HDZRlrSGuC"
+  bucket: "staging.otr-scouting.appspot.com"
