@@ -8,6 +8,6 @@ deploy:
   skip_cleanup: true
   acl: public-read
   on:
-    repo: OTRobotics/otr-scouting
+    repo: OTRobotics/otr-scouting-web
 notifications:
   email: false
