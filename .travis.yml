@@ -8,7 +8,5 @@ deploy:
   skip_cleanup: true
   acl: public-read
   local-dir: web
-  on:
-    repo: OTRobotics/otr-scouting-web
 notifications:
   email: false
