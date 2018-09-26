@@ -10,9 +10,12 @@
 
     <title>{{.EventName}}</title>
     <!-- Bootstrap core JavaScript -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/staging.otr-scouting.appspot.com/web/css/logo-nav.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://storage.googleapis.com/staging.otr-scouting.appspot.com/web/css/logo-nav.css">
 </head>
 
 <body>
@@ -59,12 +62,12 @@
     </div>
     <div class="row">
         <ul class="list-group">
-        {{range .QualMatches}}
+            {{range .QualMatches}}
             <li class="list-group-item list-group-item-action"><a href="/match/{{.MatchId}}">Qualification
                 - {{.MatchNumber}}
             </a>
             </li>
-        {{end}}
+            {{end}}
         </ul>
     </div>
     <div class="row">
@@ -72,12 +75,12 @@
     </div>
     <div class="row">
         <ul class="list-group">
-        {{range .ElimMatches}}
+            {{range .ElimMatches}}
             <li class="list-group-item list-group-item-action"><a href="/match/{{.MatchId}}">Elimination
                 - {{.MatchNumber}}
             </a>
             </li>
-        {{end}}
+            {{end}}
         </ul>
     </div>
     <div class="row">
@@ -85,28 +88,89 @@
         <br>
     </div>
     <script>
-        $(document).ready(function() {
-            $('#robots').DataTable();
-        } );
+        $(document).ready(function () {
+            $('#robots-auto').DataTable();
+            $('#robots-tele').DataTable();
+            $('#robots-end').DataTable();
+        });
     </script>
     <div class="row">
-
-        <table id="robots" class="table display">
+        <h4>Autonomous</h4>
+        <table id="robots-auto" class="table display">
             <thead>
             <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
+                <th>Team Number</th>
+                <th>Switch</th>
+
+                <th>Exchange</th>
+                <th>Scale</th>
             </tr>
             </thead>
             <tbody>
+            {{range .TeamTable}}
             <tr>
-                <td>Row 1 Data 1</td>
-                <td>Row 1 Data 2</td>
+                <td>{{.TeamNumber}}</td>
+                {{with .Autonomous}}
+                <td>{{.SwitchAttempted}}/{{.SwitchScored}}</td>
+                <td>{{.ExchangeAttempted}}/{{.ExchangeScored}}</td>
+                <td>{{.ScaleAttempted}}/{{.ScaleScored}}</td>
+                {{end}}
             </tr>
+            {{end}}
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row">
+        <h4>Teleop</h4>
+        <table id="robots-tele" class="table display">
+            <thead>
             <tr>
-                <td>Row 2 Data 1</td>
-                <td>Row 2 Data 2</td>
+                <th>Team Number</th>
+                <th>Own Switch</th>
+                <th>Opp Switch</th>
+                <th>Exchange</th>
+                <th>Scale</th>
+                <th>Dropped</th>
             </tr>
+            </thead>
+            <tbody>
+            {{range .TeamTable}}
+            <tr>
+                <td>{{.TeamNumber}}</td>
+                {{with .TeleOperated}}
+                <td>{{.OwnSwitchAttempted}}/{{.OwnSwitchScored}}</td>
+                <td>{{.OppSwitchAttempted}}/{{.OppSwitchScored}}</td>
+                <td>{{.ExchangeAttempted}}/{{.ExchangeScored}}</td>
+                <td>{{.ScaleAttempted}}/{{.ScaleScored}}</td>
+                <td>{{.CubesDropped}}</td>
+                {{end}}
+            </tr>
+            {{end}}
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row">
+        <h4>Endgame</h4>
+        <table id="robots-end" class="table display">
+            <thead>
+            <tr>
+                <th>Team Number</th>
+                <th>PartnersLifted</th>
+                <th>PartnersAttempted</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{range .TeamTable}}
+            <tr>
+                <td>{{.TeamNumber}}</td>
+                {{with .Endgame}}
+                <td>{{.PartnersLifted}}</td>
+                <td>{{.PartnersAttempted}}</td>
+                {{end}}
+            </tr>
+            {{end}}
             </tbody>
         </table>
 
