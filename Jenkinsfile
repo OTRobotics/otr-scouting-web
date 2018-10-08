@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Upload HTML') {
             steps {
-                sh 'gsutil cp -r web gs://staging.otr-scouting.appspot.com'
+                bash 'gsutil cp -r web gs://staging.otr-scouting.appspot.com'
             }
         }
     }
