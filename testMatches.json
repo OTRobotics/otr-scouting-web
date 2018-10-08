@@ -1,0 +1,268 @@
+[
+  {
+    "match_id": "1",
+    "comp_level": "qualifications",
+    "event_id": "onwat",
+    "year": 2018,
+    "match_data": {
+      "red_1": {
+        "team": 6461,
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        },
+        "match_ref": "2018_onwat_q1_6461"
+      },
+      "red_2": {
+        "team": 5024,
+        "match_ref": "2018_onwat_q1_6461",
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        }
+      },
+      "red_3": {
+        "team": 2852,
+        "match_ref": "2018_onwat_q1_2852",
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        }
+      },
+      "blue_1": {
+        "team": 1241,
+        "match_ref": "2018_onwat_q1_1241",
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        }
+      },
+      "blue_2": {
+        "team": 2056,
+        "match_ref": "2018_onwat_q1_2056",
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        }
+      },
+      "blue_3": {
+        "team": 4595,
+        "match_ref": "2018_onwat_q1_4595",
+        "robot": {
+          "team_number": 6461,
+          "autonomous": {
+            "moved": true,
+            "switch_attempted": 0,
+            "switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0
+          },
+          "tele_operated": {
+            "own_switch_attempted": 0,
+            "own_switch_scored": 0,
+            "opp_switch_attempted": 0,
+            "opp_switch_scored": 0,
+            "exchange_attempted": 0,
+            "exchange_scored": 0,
+            "scale_attempted": 1,
+            "scale_scored": 0,
+            "scale_dropped": 0,
+            "cubes_dropped": 0
+          },
+          "endgame": {
+            "climb_setup_time": 20,
+            "lifted_self": true,
+            "partners_lifted": 0,
+            "parked": true,
+            "dropped_partner": false,
+            "lifted_by_partner": false,
+            "partners_attempted": 0
+          },
+          "overall_robot": {
+            "stopped_moving": false,
+            "never_moved": false,
+            "no_show": false,
+            "defense": 5
+          }
+        }
+      }
+    }
+  }
+]
