@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{.PageTitle}}</title>
+    <title>OT Robotics Scouting</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
@@ -52,19 +52,17 @@
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-        <h1 class="mt-5">{{.PageTitle}}</h1>
+        <h1 class="mt-5">OT Robotics Scouting</h1>
         <p></p>
     </div>
     <div class="row">
-        <h3>Events</h3>
+        <h3><a href="/events">Events</a></h3>
     </div>
     <div class="row">
-        <ul class="list-group">
-            {{range .Events}}
-            <li class="list-group-item disabled list-group-item-action">
-                <a href="/event/{{.EventCode}}">{{.EventName}} - {{.EventDate}}</a></li>
-            {{end}}
-        </ul>
+        <h3><a href="/matches">Matches</a></h3>
+    </div>
+    <div class="row">
+        <h3><a href="/teams">Teams</a></h3>
     </div>
     <br>
 
