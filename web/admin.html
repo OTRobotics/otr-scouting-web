@@ -58,21 +58,38 @@
         <h1 class="mt-5">{{.PageTitle}}</h1>
         <p></p>
     </div>
-    <form method="post" action="/admin">
+    <form method="post" action="/admin/eventadd">
         <div class="form-group row">
             <label for="eventid" class="col-2 col-form-label">Add Event:</label>
             <div class="col-8">
-                <input class="form-control" type="text" placeholder="FRC Events Code" id="eventid">
+                <input class="form-control" type="text" name="eventid" placeholder="FRC Events Code" id="eventid">
             </div>
             <div class="col-2">
                 <input class="btn btn-primary" type="submit" value="Add Event">
             </div>
+            <input type="hidden" value="" name="authtoken" id="authtoken">
         </div>
     </form>
 
 
 </div>
+<script type="text/javascript">
+    function getUrlVars()
+    {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value)
+        {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var token = getUrlVars()["token"];
+    document.getElementById("authtoken").value = token;
+
+</script>
 <!-- /.container -->
+
 </body>
 
 </html>
