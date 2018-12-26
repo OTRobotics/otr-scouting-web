@@ -58,16 +58,16 @@
         <h1 class="mt-5">{{.PageTitle}}</h1>
         <p></p>
     </div>
-    <form method="post" action="/admin/eventadd">
+    <form method="get" action="/admin">
         <div class="form-group row">
             <label for="eventid" class="col-2 col-form-label">Add Event:</label>
             <div class="col-8">
                 <input class="form-control" type="text" name="eventid" placeholder="FRC Events Code" id="eventid">
             </div>
+            <input type="hidden" value="eventadd" name="action" id="action">
             <div class="col-2">
                 <input class="btn btn-primary" type="submit" value="Add Event">
             </div>
-            <input type="hidden" value="" name="authtoken" id="authtoken">
         </div>
     </form>
 
